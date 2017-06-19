@@ -134,7 +134,7 @@ li {
     float: right;
 }
 
-li a {
+.navbar li a {
     display: block;
     color: white;
     text-align: center;
@@ -142,7 +142,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+.navbar li a:hover {
     background-color: #1C1A24;
 }
 
@@ -222,8 +222,21 @@ li a:hover {
     margin-top: 5%;
 }
 
+.song_listcontent {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   margin: 3em 0;
+}
+
 .song_listcontent ul {
     list-style-type: circle;
+    margin-bottom: 3em;
 }
 
 .song_listcontent li {
