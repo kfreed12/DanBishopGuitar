@@ -114,6 +114,7 @@ h2 {
 h3 {
     font-family: 'Lora', serif;
     font-size: 1.2em;
+    color: #272532;
 }
 
 p {
@@ -192,6 +193,22 @@ li a:hover {
    margin: 3em 4.5em;
 }
 
+.videocontent {
+    display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+    margin: 3em 0em;
+}
+
+.videocontent video {
+    margin: -3em 0em 8em 0em;
+}
+
 .hometext {
     margin: 0 1em;
 }
@@ -203,6 +220,15 @@ li a:hover {
     max-width: 500px;
     height: auto;
     margin-top: 5%;
+}
+
+.song_listcontent ul {
+    list-style-type: circle;
+}
+
+.song_listcontent li {
+    list-style-type: circle;
+    float: none;
 }
 
 button {
