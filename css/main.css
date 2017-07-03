@@ -155,11 +155,14 @@ li {
 .footer {
     padding: 1em 5em;
     background-color: #272532;
+
+    /*--- comment out to see if this removes weird behavior
     z-index: 100; 
     bottom: 0; 
     left: 0;
     position:fixed;
     width: 100%;
+    */
 }
 
 .homelink a {
