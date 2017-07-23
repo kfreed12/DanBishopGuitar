@@ -14,8 +14,16 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    height: 100%;
+}
+
+body {
     background-color: #FAFAFA;
     height: 100%;
+}
+
+body.home {
+    background-color: #e6e6e6;
 }
 
 /*
@@ -155,14 +163,6 @@ li {
 .footer {
     padding: 1em 5em;
     background-color: #272532;
-
-    /*--- comment out to see if this removes weird behavior
-    z-index: 100; 
-    bottom: 0; 
-    left: 0;
-    position:fixed;
-    width: 100%;
-    */
 }
 
 .homelink a {
@@ -188,6 +188,8 @@ li {
    display: flex;
    width:100%;
    height: auto;
+   max-width: 1183px;
+   margin: auto;
 }
 
 .bio {
@@ -200,7 +202,11 @@ li {
    -webkit-justify-content: left;
    justify-content: left;
    padding: 1em;
-   margin: 3em 4.5em;
+   padding-bottom: 5%;
+   padding-top: 3%;
+   max-width: 1150px;
+   margin: auto;
+   background-color: #FAFAFA;
 }
 
 .videocontent {
@@ -220,7 +226,7 @@ li {
 }
 
 .hometext {
-    margin: 0 1em;
+    padding-right: 5em;
 }
 
 .homephoto img {
@@ -252,6 +258,22 @@ li {
 .song_listcontent li {
     list-style-type: circle;
     float: none;
+}
+
+.eventscontent {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: column;
+   flex-direction: column;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+   margin: 3em 0;
+}
+
+.eventssmall {
+    display: none;
 }
 
 button {
@@ -439,6 +461,14 @@ button:hover {
       object-fit: initial;
       width: 480px;
       height: auto;
+    }
+
+    .eventslarge{
+        display: none;
+    }
+
+    .eventssmall{
+        display:flex;
     }
 
 }
