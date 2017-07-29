@@ -24,14 +24,15 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="navbar">
-            <div class="homelink"><a href="#home"><strong>Dan Bishop</strong> Classical Guitar</a></div>
-            <ul>
-                    <li><h2><a href="events.html">EVENTS</a></h2></li>
-                    <li><h2><a href="song_list.html">SONG LIST</a></h2></li>
-                    <li><h2><a href="videos.html">VIDEOS</a></h2></li>
-                    <li><h2><a class="active" href="index.html">HOME</a></h2></li>
-            </ul>
+        <div class="navbar" id="myNavBar">
+            <div class="homelink"><a href="index.html"><strong>Dan Bishop</strong> Classical Guitar</a></div>
+            <div class="pagelinks" id="pagelinks">
+                <h2><a href="events.html">EVENTS</a></h2>
+                <h2><a href="song_list.html">SONG LIST</a></h2>
+                <h2><a href="videos.html">VIDEOS</a></h2></li>
+                <h2><a class="active" href="index.html">HOME</a></h2>
+            </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
 
             <img class="splash" src="img/splash.jpg"></img>
@@ -75,6 +76,22 @@
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+
+            function myFunction() {
+                var x = document.getElementById("myNavBar");
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar";
+                }
+
+                var y = document.getElementById("myPageLinks");
+                if (y.className === "pagelinks") {
+                    y.className += " responsive";
+                } else {
+                    y.className = "pagelinks";
+                }
+            }
         </script>
     </body>
 </html>

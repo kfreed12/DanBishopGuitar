@@ -24,24 +24,25 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="navbar">
-            <ul>
-                <div class="homelink"><a href="#home"><strong>Dan Bishop</strong> Classical Guitar</a></div>
-                <li><h2><a href="events.html">EVENTS</a></h2></li>
-                <li><h2><a class="active" href="song_list.html">SONG LIST</a></h2></li>
-                <li><h2><a href="videos.html">VIDEOS</a></h2></li>
-                <li><h2><a href="index.html">HOME</a></h2></li>
-            </ul>
+        <div class="navbar" id="myNavBar">
+            <div class="homelink"><a href="index.html"><strong>Dan Bishop</strong> Classical Guitar</a></div>
+            <div class="pagelinks" id="pagelinks">
+                <h2><a href="events.html">EVENTS</a></h2>
+                <h2><a href="song_list.html">SONG LIST</a></h2>
+                <h2><a href="videos.html">VIDEOS</a></h2></li>
+                <h2><a class="active" href="index.html">HOME</a></h2>
+            </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
 
         <div class="song_listcontent">
 
             <!-- content goes here -->
-
             <p>Here is a list of songs I play.</p>
 
+            <div class="blocktext">
             <h3>CLASSICAL</h3> 
-            <ul>                                                                                                
+            <ul>                                       
                 <li><a href="videos.html">Cello suite *</a></li>
                 <li><a href="videos.html">Lagrima *</a></li>
                 <li><a href="videos.html">Minuet *</a></li>
@@ -64,7 +65,9 @@
                 <li>Pachabel's Canon</li>
                 <li>Mozart's Sonata in C Major</li>
             </ul>
+            </div>
 
+            <div class="blocktext">
             <h3>POPULAR</h3>
             <ul>
                 <li><a href="videos.html">Classical Gas *</a></li>
@@ -92,7 +95,9 @@
                 <li>Imagine</li>
                 <li>Pirates of the Caribbean</li>
             </ul>
+            </div>
 
+            <div class="blocktext">
             <h3>LATIN</h3>
             <ul>
                 <li>La Paloma</li>
@@ -103,7 +108,9 @@
                 <li>One Note Samba</li>
                 <li>Bossa Nova medley</li>
             </ul>
+            </div>
 
+            <div class="blocktext">
             <h3>CELTIC</h3>
             <ul>
                 <li>Amazing Grace</li>
@@ -124,6 +131,7 @@
                 <li>The Harvest Home</li>
                 <li>Flowers from Aayko</li>
             </ul>
+            </div>
         
 
 
@@ -145,6 +153,22 @@
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+
+            function myFunction() {
+                var x = document.getElementById("myNavBar");
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar";
+                }
+
+                var y = document.getElementById("myPageLinks");
+                if (y.className === "pagelinks") {
+                    y.className += " responsive";
+                } else {
+                    y.className = "pagelinks";
+                }
+            }
         </script>
     </body>
 </html>
