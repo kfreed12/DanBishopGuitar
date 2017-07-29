@@ -18,7 +18,7 @@ html {
 }
 
 body {
-    background-color: #FAFAFA;
+    background-color: #e6e6e6;
     height: 100%;
 }
 
@@ -231,7 +231,14 @@ p {
    align-items: center;
    -webkit-justify-content: center;
    justify-content: center;
-    margin: 3em 0em;
+
+    background-color: #FAFAFA;
+    width: auto;
+    max-width: 1183px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    padding-bottom: 3em;
 }
 
 .videocontent video {
@@ -251,9 +258,20 @@ p {
     margin-top: 5%;
 }
 
+.song_listcontent {
+    background-color: #FAFAFA;
+    width: auto;
+    max-width: 1183px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    padding-bottom: 5em;
+}
+
 .song_listcontent ul {
+    display: block;
     list-style-type: circle;
-    margin-bottom: 3em;
+    padding-bottom: : 3em;
 }
 
 .song_listcontent p {
@@ -274,7 +292,15 @@ p {
    align-items: center;
    -webkit-justify-content: center;
    justify-content: center;
-   margin: 3em 0;
+
+    background-color: #FAFAFA;
+    width: auto;
+    max-width: 1183px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1em;
+    padding-bottom: 5em;
+
 }
 
 .eventssmall {
